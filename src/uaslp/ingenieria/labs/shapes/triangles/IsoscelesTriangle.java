@@ -1,17 +1,17 @@
 package uaslp.ingenieria.labs.shapes.triangles;
 
 import uaslp.ingenieria.labs.shapes.Triangle;
-import java.lang.Math;
 
-public class TriangleEquilatero extends Triangle {
-    private double side;
+public class  IsoscelesTriangle extends Triangle  {
+    private int base,side;
 
-    public TriangleEquilatero(double side) {
+    public IsoscelesTriangle(int base, int side) {
+        this.base = base;
         this.side = side;
     }
 
     public String getName(){
-        return "Triángulo Equilatero";
+        return "Triángulo Isósceles";
     }
 
     public int getSidesCount(){
@@ -19,10 +19,10 @@ public class TriangleEquilatero extends Triangle {
     }
 
     public double getPerimeter(){
-        return side*3;
+        return side+side+base;
     }
 
     public double getArea(){
-        return (side*Math.pow(Math.pow(side,2)-Math.pow((side/2),2),.5))/2;
+        return (base*(side^2-(base/2)^2)^(1/2))/2;
     }
 }

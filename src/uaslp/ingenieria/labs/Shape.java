@@ -8,12 +8,11 @@ public class Shape {
         return "shape";
     }
 
-    // Tarea
     public int getSidesCount() {
         return 0;
     }
 
-    public int getPerimeter() {
+    public double getPerimeter() {
         return 0;
     }
 

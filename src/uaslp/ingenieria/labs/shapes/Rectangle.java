@@ -3,7 +3,6 @@ package uaslp.ingenieria.labs.shapes;
 import uaslp.ingenieria.labs.Shape;
 
 public class Rectangle extends Shape {
-
     private int base;
     private int height;
 
@@ -14,5 +13,17 @@ public class Rectangle extends Shape {
 
     public String getName() {
         return "Rectangle";
+    }
+
+    public int getSidesCount() {
+        return 4;
+    }
+
+    public double getPerimeter() {
+        return base+base+height+height;
+    }
+
+    public double getArea(){
+        return base*height;
     }
 }

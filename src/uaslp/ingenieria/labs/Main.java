@@ -1,7 +1,7 @@
 package uaslp.ingenieria.labs;
 
 import uaslp.ingenieria.labs.shapes.*;
-import uaslp.ingenieria.labs.shapes.triangles.TriangleEquilatero;
+import uaslp.ingenieria.labs.shapes.triangles.*;
 
 import java.util.LinkedList;
 
@@ -11,7 +11,6 @@ public class Main {
         LinkedList<Shape> shapes = new LinkedList<>();
 
         shapes.add(new Shape());
-
         shapes.add(new Circle(5));
         shapes.add(new Rectangle(8, 3));
         shapes.add(new Rectangle(14, 10));
@@ -25,7 +24,5 @@ public class Main {
             System.out.println("Area: " + shape.getArea());
             System.out.println("-----------------------------------------------");
         }
-
-
     }
 }
